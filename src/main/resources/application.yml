@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/FinalProjectBackend
+    username: postgres
+    password: 1234
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lab:
+            non_contextual_creation: true
+logging:
+  level:
+    org:
+      springframework.web: trace
+    org.apache: trace
+
+#Post üzerinden gönderimleri detayli bir sekilde loglama için kullanildi.
+
